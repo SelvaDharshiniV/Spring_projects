@@ -1,0 +1,15 @@
+server:
+  port: 6065
+  
+spring:
+  application:
+    name: blood-donor-service
+  config:
+    import: configserver:http://localhost:8888
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - "*" 

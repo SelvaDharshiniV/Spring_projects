@@ -1,0 +1,40 @@
+server:
+  port: 8099
+info:      
+  app:
+    name: ${spring.application.name}
+    version: 1.0
+    author: "Selva"
+  build:
+    artificatId: '@project.artifact@'
+    groupId: '@project.groupId@'
+    version: '@project.version@'
+  java:
+    version:@java.version@
+
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    password: HR
+    url: jdbc:oracle:thin:@10.90.1.105:1521/DEV
+    username: HR
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    
+logging:
+  level:
+   '[org.springframework.security]' : debug
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - "*"
+  endpoint:
+     health:
+       show-details: always
+  info:
+     env:
+      enabled: true

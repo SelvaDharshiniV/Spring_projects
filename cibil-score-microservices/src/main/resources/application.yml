@@ -1,0 +1,14 @@
+server:
+  port: 5046
+  
+spring:
+  application:
+    name: cibil-score-microservice
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+    

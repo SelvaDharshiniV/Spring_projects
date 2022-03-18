@@ -1,0 +1,9 @@
+version: '3'
+services:
+  employeeapp:
+    image: dharshini15/employee-app:1.0
+    build:
+      context: ./
+    ports:
+      - "3030:3030"
+      

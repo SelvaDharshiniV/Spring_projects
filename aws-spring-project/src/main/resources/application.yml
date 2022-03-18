@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    password: mano2004
+    url: jdbc:postgresql://trainingdb.cjax3e5ovsg2.us-east-1.rds.amazonaws.com:5432/test
+    username: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+server:
+  port: 5000
+
+  

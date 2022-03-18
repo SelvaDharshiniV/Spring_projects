@@ -1,0 +1,15 @@
+server:
+  port: 7077
+  
+spring:
+  application:
+    name: one-to-one
+  config:
+    import: configserver:http://localhost:8888
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - "*" 
