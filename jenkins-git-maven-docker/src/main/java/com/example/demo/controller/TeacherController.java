@@ -15,5 +15,14 @@ public class TeacherController {
 		List<String> list =Arrays.asList("kanic","selva");
 		return list.toString();
 	}
-
+	@GetMapping(path = "/teachers/{dept}")
+	public String getTeachersByDept(@PathVariable("dept") String dept) {
+		
+		List<String> list =Arrays.asList("kanic","selva");
+		
+		if(dept.equals("ece")) {
+			list=Arrays.asList("raj","dharshini");
+		}
+		return list.toString();
+	}
 }
