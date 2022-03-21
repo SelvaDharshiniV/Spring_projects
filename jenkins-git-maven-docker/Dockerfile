@@ -1,6 +1,6 @@
 FROM java:8
 
-ARG JAR_FILE=target/teacher-service.jar
+ARG JAR_FILE=jenkins-git-maven-docker/target/teacher-service.jar
 
 COPY ${JAR_FILE} app.jar
 
