@@ -14,6 +14,8 @@ public class TeacherController {
 	@GetMapping(path = "/teachers")
 	public String getTeachers() {	
 		List<String> list =Arrays.asList("kanic","selva");
+		System.out.print("final out");
+
 		return list.toString();
 	}
 	@GetMapping(path = "/teachers/{dept}")
@@ -26,5 +28,4 @@ public class TeacherController {
 		}
 		return list.toString();
 	}
-	
 }
